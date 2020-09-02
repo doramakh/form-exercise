@@ -9,5 +9,50 @@
 </head>
 <body>
   
+  <section class="form-section">
+    <div class="container">
+      <div class="form-section-content">
+        <div class="form-info">
+          <h2>Get in Touch</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex repellendus aut fugiat.</p>
+        </div><!-- form-info -->
+        
+        <form class="form" method="GET">
+          <h3>Send us a Message</h3>
+          
+          <label class="visually-hidden" for="name_input">Name</label>
+          <input class="block-input" type="text" id="name_input" name="user-name" placeholder="Name" required>
+          <span class="input-line" aria-hidden="true"></span>
+
+          <label class="visually-hidden" for="email_input">Email</label>
+          <input class="block-input" type="email" id="email_input" name="email" placeholder="Email" required>
+          <span class="input-line" aria-hidden="true"></span>
+
+          <label class="visually-hidden" for="tel_input">Mobile</label>
+          <input class="block-input" type="tel" id="tel_input" name="tel" placeholder="Mobile" required>
+          <span class="input-line" aria-hidden="true"></span>
+
+          <div class="radio">
+            <span class="radio-title">Preferred mode of Communication</span>
+            <div class="radio-inputs">
+              <label for="email_input">
+                <input class="inline-block-input" type="radio" id="email_input" name="contact">
+                Email
+              </label>
+              <label for="mobile_input">
+                <input class="inline-block-input" type="radio" id="mobile_input" name="contact">
+                Phone
+              </label>
+            </div>
+          </div>
+          
+          <label class="visually-hidden" for="message_input">Message</label>
+          <textarea name="message" id="message_input">Message</textarea>
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </div><!-- form-section-content -->
+    </div><!-- container -->
+  </section>
+  
 </body>
 </html>
